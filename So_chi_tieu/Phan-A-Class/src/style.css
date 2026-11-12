@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+.app {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clock {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.error {
+  color: red;
+  width: 100%;
+  margin: 0;
+}
+.filter {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0;
+}
+.filter button.active {
+  background: #333;
+  color: #fff;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}

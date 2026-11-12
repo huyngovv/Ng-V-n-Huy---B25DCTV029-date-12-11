@@ -1,0 +1,71 @@
+:root {
+  --bg: #f4f4f4;
+  --card: #ffffff;
+  --text: #222222;
+  --border: #dddddd;
+}
+:root[data-theme="dark"] {
+  --bg: #1e1e1e;
+  --card: #2b2b2b;
+  --text: #eeeeee;
+  --border: #444444;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+.app {
+  max-width: 700px;
+  margin: 20px auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 6px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button {
+  margin-left: 6px;
+}
+.clock {
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+}
+.error {
+  color: red;
+  width: 100%;
+  margin: 0;
+}
+.filter {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0;
+}
+.filter button.active {
+  background: #333;
+  color: #fff;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
